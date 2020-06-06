@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#201F1F</color>
+    <color name="colorPrimaryDark">#1A1717</color>
+    <color name="colorAccent">#838383</color>
+    <color name="text_colour">#FFFFFF</color>
+    <color name="border">#707070</color>
+
+    <color name="nav_active_colour">#F2E0E0</color>
+    <color name="nav_default_colour">#585858</color>
+
+    <color name="fav_background2">#585858</color>
+
+    <color name="fav_background1">#1A1717</color>
+
+    <color name="text_background">#65363932</color>
+    <color name="fab_text">#E92196F3</color>
+</resources>

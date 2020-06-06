@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".activities.Set_WallpaperActivity">
+
+
+        <ImageView
+            android:id="@+id/wallpaper_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/splash1"
+            android:scaleType="fitXY"/>
+
+        <com.github.clans.fab.FloatingActionButton
+
+            android:id="@+id/plus_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="32dp"
+            android:layout_marginEnd="26dp"
+            fab:fab_size="normal"
+            android:src="@drawable/ic_action_plus"/>
+
+       <LinearLayout
+           android:id="@+id/download_layout"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_gravity="bottom|end"
+           android:layout_marginEnd="33dp"
+           android:layout_marginBottom="105dp"
+           android:visibility="gone"
+           >
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Download"
+                   style="@style/TextAppearance.AppCompat.Title"
+                   android:layout_marginTop="16dp"
+                   android:layout_marginRight="8dp"
+                   android:textColor="@color/text_colour"/>
+
+               <com.github.clans.fab.FloatingActionButton
+                   android:id="@+id/btn_download"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   fab:fab_size="mini"
+                   android:src="@drawable/ic_action_download"/>
+       </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/set_wallpaper_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="33dp"
+            android:layout_marginBottom="160dp"
+            android:visibility="gone"
+            >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set wallpaper"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginRight="8dp"
+                    android:textColor="@color/text_colour"/>
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/btn_set"
+                    android:background="@color/fab_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    fab:fab_size="mini"
+                    android:src="@drawable/setwallpaper"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/share_wallpaper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="214dp"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_marginTop="13dp"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/text_colour"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/btn_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_size="mini"
+            android:src="@drawable/share"/>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
